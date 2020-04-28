@@ -8,8 +8,7 @@ var ArticleSchema = new Schema({
         required: true
     },
     link: {
-        type: String,
-        required: true
+        type: String
     }
 })
 var Article = mongoose.model("Article", ArticleSchema)
