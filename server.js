@@ -22,8 +22,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-apiRoutes = require("./routes/apiRoutes")
-apiRoutes(app)
+require("./routes/apiRoutes")(app)
 mongoose.connect("mongodb://localhost/onionScraperDB", { useNewUrlParser: true, useUnifiedTopology: true });
 
 

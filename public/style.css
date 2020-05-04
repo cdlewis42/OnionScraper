@@ -1,5 +1,9 @@
-#articles{
+.individualArticle{
     background-color: #daf1da;
+    padding:20px;
+    margin:20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center
 }
 body { background-color: #b3e6b3 }
 #wrapper {
@@ -10,9 +14,7 @@ body { background-color: #b3e6b3 }
   padding-top: 5%;
 }
 #articles {
-  display: inline-block;
-  overflow: auto;
-  width: 60%;
+  width: 80%;
   height: 700px;
 }
 #notes {
@@ -31,4 +33,18 @@ input {
 textarea {
   height: 200px;
   font-size: 18px;
+}
+nav{
+  padding:40px;
+  text-align: center;
+}
+.btn{
+  float:right;
+  background-color: white;
+  margin:10px;
+  position:"relative";
+}
+img{
+  height:200px;
+  width:200px
 }
