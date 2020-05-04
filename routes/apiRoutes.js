@@ -54,6 +54,18 @@ module.exports=function(app){
         console.log(results);
       });
     })
+
+
+    app.get("/clear", function(req,res){
+      db.Article.remove({})
+      .then(function(dbArticle){
+        
+      }).catch(function(err){
+        console.log(err)
+      })
+      res.redirect("/")
+    })
+
     app.get("/articles", function (req, res) {
       // TODO: Finish the route so it grabs all of the articles
       db.Article.find({})
@@ -63,6 +75,8 @@ module.exports=function(app){
         res.json(err)
       })
     });
+
+
     // Route for grabbing a specific Article by id, populate it with it's note
     app.get("/articles/:id", function(req, res) {
       // Using the id passed in the id parameter, prepare a query that finds the matching one in our db...
@@ -78,6 +92,7 @@ module.exports=function(app){
         res.json(err);
       });
     });
+
     
     // Route for saving/updating an Article's associated Note
     app.post("/articles/:id", function(req, res) {
