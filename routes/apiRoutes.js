@@ -49,7 +49,7 @@ module.exports=function(app){
             console.log(err);
           });
         });
-        
+        res.redirect("/")
         // Log the results once you've looped through each of the elements found with cheerio
         console.log(results);
       });
