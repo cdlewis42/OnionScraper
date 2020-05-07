@@ -23,7 +23,7 @@ app.use(express.static("public"));
 
 // Connect to the Mongo DB
 require("./routes/apiRoutes")(app)
-var MONGODB_URI = process.env.MONGODB_URI||"mongodb://localhost/onionScraperDB"
+var MONGODB_URI = process.env.MONGODB_URI||"mongodb://celeste:password1@ds241133.mlab.com:41133/heroku_djvp1m7f"
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 
