@@ -1,0 +1,29 @@
+{
+  "name": "onionscraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "mongojs": "^3.1.0",
+    "morgan": "^1.10.0",
+    "mongoose": "^5.9.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdlewis42/OnionScraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdlewis42/OnionScraper/issues"
+  },
+  "homepage": "https://github.com/cdlewis42/OnionScraper#readme"
+}
