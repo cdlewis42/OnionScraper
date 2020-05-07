@@ -15,6 +15,9 @@ var ArticleSchema = new Schema({
         type: String,
         required: true
     },
+    noteTitle:{
+        type:String
+    },
     note: {
         type: String
     }
