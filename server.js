@@ -23,7 +23,8 @@ app.use(express.static("public"));
 
 // Connect to the Mongo DB
 require("./routes/apiRoutes")(app)
-mongoose.connect("mongodb://localhost/onionScraperDB", { useNewUrlParser: true, useUnifiedTopology: true });
+var MONGODB_URI = process.env.MONGODB_URI||"mongodb://localhost/onionScraperDB"
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 app.listen(PORT, function() {
